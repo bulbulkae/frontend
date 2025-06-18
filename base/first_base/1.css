@@ -1,0 +1,97 @@
+body {
+  margin: 20px;
+}
+
+/* div {
+  background-color: beige;
+  margin: 10px;
+} */
+
+#div3p {
+  /* position: absolute; */
+  position: relative; /* related position to element before this element */
+  position: fixed;
+  top: 100px;
+  right: 20px;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: 100px 100px 1fr 200px; */
+  grid-template-rows: 100px 100px 100px;
+}
+
+.div-grid {
+  background-color: cornflowerblue;
+  height: 40px;
+  margin: 5px 10px 5px 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+}
+
+.div-flex {
+  height: 30px;
+  width: 75px;
+  background-color: thistle;
+  margin: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: thistle;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

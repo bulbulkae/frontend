@@ -1,0 +1,136 @@
+<!-- 
+ html is not a programming language, markup language = язык разметки
+-->
+<style>
+  .h1 {
+    color: red;
+  }
+
+  .div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 15px;
+    padding: 25px;
+    border: solid violet 1px;
+  }
+  #this is unique id {
+    background-color: white;
+  }
+
+  button {
+    height: 30px;
+    background-color: burlywood;
+  }
+
+  button:hover {
+    background-color: aqua;
+  }
+
+  button:active {
+    background-color: blueviolet;
+  }
+</style>
+
+<p>This is paragraph</p>
+
+<h1>This is header 1</h1>
+<h2>This is header 2</h2>
+<h3>This is header 3</h3>
+<h4>This is header 4</h4>
+<h5>This is header 5</h5>
+<h6>This is header 6</h6>
+
+<img
+  src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/full-moon-night-landscape-732x549-thumbnail-1-732x549.jpg"
+  alt="this is image of moon"
+/>
+
+<div>This is tag div that is we can call box, container, block</div>
+
+<div
+  class="this is name for this div"
+  id="this is unique id"
+  style="background-color: blue; color: aquamarine"
+>
+  this is div
+  <p>this is paragraph in div</p>
+</div>
+
+<!--
+    div, p, h1, img - tags
+    class, id, src , alt - atributes 
+ -->
+
+<button>press me</button>
+
+<!-- 
+      html
+head      body
+title     content -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>Header</header>
+    <h1>new content</h1>
+
+    <div>
+      Div 1
+      <p>paragraph 1 <span>this is span inside paragraph</span></p>
+    </div>
+
+    <div>
+      Div 2
+      <p>paragraph 2
+        <div>this is div inside paragraph</div>
+      </p>
+    </div>
+
+    <div id="div3p">
+      Div 3
+      <p >paragraph 3</p>
+    </div>
+
+    <div>
+      Div 4
+      <p>paragraph 4</p>
+    </div>
+
+
+    <div class="grid">
+      <div class="div-grid">grid div 1</div>
+      <div class="div-grid">grid div 1</div>
+      <div class="div-grid">grid div 1</div>
+      <div class="div-grid">grid div 1</div>
+      <div class="div-grid">grid div 1</div>
+
+    </div>
+
+    <div class="flex">
+      <div class="div-flex">flex div 1</div>
+      <div class="div-flex">flex div 1</div>
+      <div class="div-flex">flex div 1</div>
+      <div class="div-flex">flex div 1</div>
+      <div class="div-flex">flex div 1</div>
+
+    </div>
+
+    <div class="grid-container">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+      <div class="item4">item4</div>
+      <div class="item5">item5</div>
+
+    </div>
+
+    <footer>Footer</footer>
+  </body>
+</html>
